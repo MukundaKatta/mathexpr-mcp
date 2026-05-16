@@ -1,0 +1,59 @@
+{
+  "name": "@mukundakatta/mathexpr-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.MukundaKatta/mathexpr",
+  "description": "MCP server: evaluate mathematical expressions (mathjs-backed) with units and constants.",
+  "type": "module",
+  "bin": {
+    "mcp-mathexpr": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "zed",
+    "math",
+    "expression",
+    "calculator",
+    "mathjs"
+  ],
+  "author": "Mukunda Katta <mukunda.vjcs6@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MukundaKatta/mathexpr-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/MukundaKatta/mathexpr-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukundaKatta/mathexpr-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mathjs": "^13.2.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
