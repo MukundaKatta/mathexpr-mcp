@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "mathjs": "^13.2.0"
+    "mathjs": "^15.2.0"
   },
   "devDependencies": {
     "tsx": "^4.7.0",
